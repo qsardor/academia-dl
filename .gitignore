@@ -1,0 +1,32 @@
+# Python build & packaging artifacts
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Download artifacts & test outputs
+*.pdf
+downloads/
+archive/
+related_*/
+*.tmp
+*.tmp.*
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs
+*.log
+
+# Environment & credentials
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

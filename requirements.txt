@@ -1,0 +1,2 @@
+# Core Fast-TLS & Stealth HTTP Engine
+curl_cffi>=0.6.0

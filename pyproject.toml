@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academia-dl"
+version = "0.0.1"
+description = "Fast, stealth research paper downloader, search engine, and citation generator for Academia.edu"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Antigravity & Q.S@RDOR" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+keywords = [
+    "academia",
+    "downloader",
+    "research",
+    "papers",
+    "pdf",
+    "cli",
+    "bm25",
+    "citations",
+    "academic-archiver"
+]
+dependencies = [
+    "curl_cffi>=0.6.0"
+]
+
+[tool.setuptools]
+py-modules = ["academia_dl"]
+
+[project.scripts]
+academia = "academia_dl:main"
+academia-dl = "academia_dl:main"
+
+[project.urls]
+Homepage = "https://github.com/qsardor/academia-dl"
+Repository = "https://github.com/qsardor/academia-dl"
+"Bug Tracker" = "https://github.com/qsardor/academia-dl/issues"
